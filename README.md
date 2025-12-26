@@ -76,3 +76,11 @@ UNIQUE(stock_id, price_date)
 
 
 This setup keeps metadata separate from price history, avoids duplicate daily entries, and works well for analytics.# stock-market-data-pipeline
+ 
+ Scheduled Ingestion
+
+The pipeline can be run on a schedule using a lightweight Python scheduler:
+
+```bash
+python scheduler.py
+
